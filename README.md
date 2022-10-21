@@ -1,12 +1,7 @@
 # Wordpress docker
-## with
+docker nginx webserver
+with docker-compose with mysql:8.0, wordpress:6.0-fpm-alpine, nginx:1.23.1-alpine, phpmyadmin/phpmyadmin
 
-### mysql:8.0
-### wordpress:6.0-fpm-alpine
-### nginx:1.23.1-alpine
-### phpmyadmin/phpmyadmin
-
-docker-compose with mysql:8.0, wordpress:6.0-fpm-alpine, nginx:1.23.1-alpine, phpmyadmin/phpmyadmin
 ```yml
 version: '3'
 
