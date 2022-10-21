@@ -10,7 +10,7 @@ services:
     image: mysql:8.0
     container_name: db
     restart: unless-stopped
-    env_file: hidden.env #rename this to .env, rename file also
+    env_file: .env #rename hidden.env file to .env
     environment:
       - MYSQL_DATABASE=wordpress
     volumes: 
@@ -27,7 +27,7 @@ services:
     image: wordpress:6.0-fpm-alpine
     container_name: wordpress
     restart: unless-stopped
-    env_file: .env
+    env_file: .env #rename hidden.env file to .env
     environment:
       - WORDPRESS_DB_HOST=db:3306
       - WORDPRESS_DB_USER=$MYSQL_USER
