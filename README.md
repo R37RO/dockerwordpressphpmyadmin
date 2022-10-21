@@ -6,7 +6,7 @@
 ### nginx:1.23.1-alpine
 ### phpmyadmin/phpmyadmin
 
-docker-compose with wordpress-alpine, nginx and phpmyadmin 
+docker-compose with mysql:8.0, wordpress:6.0-fpm-alpine, nginx:1.23.1-alpine, phpmyadmin/phpmyadmin
 ```yml
 version: '3'
 
